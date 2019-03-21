@@ -15,7 +15,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "crypto\\": "src/"
+            "Crazy\\": "src/"
         }
     }
 }

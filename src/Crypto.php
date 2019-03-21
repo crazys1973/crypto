@@ -21,9 +21,9 @@ class Crypto
 {
     private static $instance;
 
-    public static function __callStatic($name)
+    public static function __callStatic($name, $arguments)
     {
-        $class = false !== strpos($name, '\\') ? $name : '\\crazy\\crypto\\lib\\' . ucfirst(strtolower($name));
+        $class = false !== strpos($name, '\\') ? $name : '\\Crazy\\lib\\' . ucfirst(strtolower($name));
         if (!self::$instance instanceof $class) {
             self::$instance = new $class();
         }
