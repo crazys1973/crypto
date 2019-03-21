@@ -24,9 +24,15 @@ class Crypto
     public static function __callStatic($name, $arguments)
     {
         $class = false !== strpos($name, '\\') ? $name : '\\Crazy\\lib\\' . ucfirst(strtolower($name));
+        class_exists($class) or $class = '\Crazy\lib\Think';
+
         if (!self::$instance instanceof $class) {
             self::$instance = new $class();
         }
         return self::$instance;
+    }
+
+    private function __construct()
+    {
     }
 }
