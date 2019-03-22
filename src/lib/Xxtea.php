@@ -92,7 +92,7 @@ class Xxtea implements Cryptoable
     private function long2str($v, $w)
     {
         $len = count($v);
-        $s = array();
+        $s = [];
         for ($i = 0; $i < $len; $i++) {
             $s[$i] = pack("V", $v[$i]);
         }

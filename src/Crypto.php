@@ -10,6 +10,7 @@ namespace Crazy;
 
 /**
  * 加密解密类
+ * @method lib\Aes Aes() static AES-256-CBC 加密实现类
  * @method lib\Base64 Base64() static Base64 加密实现类
  * @method lib\Crypt Crypt() static Crypt 加密实现类
  * @method lib\Des Des() static Des 加密实现类
