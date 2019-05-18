@@ -5,14 +5,17 @@
 [![Total Downloads](https://poser.pugx.org/crazy/crypto/downloads)](https://packagist.org/packages/crazy/crypto)
 
 ## 简介
-由于PHP开发过程中，经常需要对信息进行可逆加解密，本人将ThinkPHP 3.x中的加解密类进行了重新封闭，统一处理。本版中支持6种算法：`AES`、`Base64`、`Crypt`、`Des`、`Think`和`Xxtea`。
+由于PHP开发过程中，经常需要对信息进行可逆加解密，本人将ThinkPHP 3.x中的加解密类进行了重新封装，统一处理。本版中支持6种算法：`AES`、`Base64`、`Crypt`、`Des`、`Think`和`Xxtea`。
 
 ---
 ## 安装
 ### Git
 地址：`https://github.com/crazys1973/crypto.git`
+### 码云
+地址：`https://gitee.com/crazys1973/crypto.git`
 ### Composer
 命令：`composer require crazy/crypto`
+
 ### 系统需求
 PHP版本5.6以上
 
@@ -75,3 +78,5 @@ echo Crypto::Base64()->decrypt($data, 'key123');
 - 集成5种加密算法：Base64, Crypt, Des, Think, Xxtea。
 - 修改源码中变量未初始化的bug。
 - 更新代码注释。
+
+[https://github.com/crazys1973/crypto/releases/latest]: https://github.com/crazys1973/crypto/releases/latest
