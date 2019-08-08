@@ -1,9 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: dell
- * Date: 2019/3/20
- * Time: 14:10
+ * Crazy/crypto
+ * 统一加密/解密工具类
+ *
+ * Author：惠达浪
+ * Blog: https://www.qdcrazy.cc
+ * Email： crazys@126.com
+ * Date：  2019/03/20
  */
 
 namespace Crazy;
